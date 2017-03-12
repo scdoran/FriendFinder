@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Friend Survey</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<title>Twin Peaks Character Quiz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-	<div class="container">
+	<div class="container text-center">
 		<h1>Which Twin Peaks Character Are You?</h1>
-		<h2>Answer the following questions based on how much you agree with the statement (1 is disagree and 5 is agree).</h2>
+		<hr>
 
-		<p>1: Dreams are an important way to understand the world around you.</p>
+		<h3>What is your name?</h3><input type="text" id="name">
+		<h3>Please paste a link for your picture.</h3>
+		<input type="text" id="image"><hr>
+
+		<h2>Answer the following questions based on how much you agree with the statement (1 is strongly disagree and 5 is strongly agree).</h2>
+		<hr>
+
+		<h3>1: Dreams are an important way to understand the world around you.</h3>
 			<form>
 				<label class="radio-inline"><input type="radio" name="q1">1</label>
 				<label class="radio-inline"><input type="radio" name="q1">2</label>
@@ -19,7 +26,7 @@
 				<label class="radio-inline"><input type="radio" name="q1">5</label>
 			</form>
 
-		<p>2: Behind all things are reasons.</p>
+		<h3>2: Behind all things are reasons.</h3>
 			<form>
 				<label class="radio-inline"><input type="radio" name="q2">1</label>
 				<label class="radio-inline"><input type="radio" name="q2">2</label>
@@ -28,7 +35,7 @@
 				<label class="radio-inline"><input type="radio" name="q2">5</label>
 			</form>
 
-		<p>3: All that we see in this world is based on someone's ideas.</p>
+		<h3>3: All that we see in this world is based on someone's ideas.</h3>
 			<form>
 				<label class="radio-inline"><input type="radio" name="q3">1</label>
 				<label class="radio-inline"><input type="radio" name="q3">2</label>
@@ -37,7 +44,7 @@
 				<label class="radio-inline"><input type="radio" name="q3">5</label>
 			</form>
 
-		<p>4: We are ignorant of many beautiful things — things like the truth.</p>
+		<h3>4: We are ignorant of many beautiful things — things like the truth.</h3>
 			<form>
 				<label class="radio-inline"><input type="radio" name="q4">1</label>
 				<label class="radio-inline"><input type="radio" name="q4">2</label>
@@ -46,7 +53,7 @@
 				<label class="radio-inline"><input type="radio" name="q4">5</label>
 			</form>	
 
-		<p>5: Eyes are the mirror of the soul.</p>
+		<h3>5: Eyes are the mirror of the soul.</h3>
 			<form>
 				<label class="radio-inline"><input type="radio" name="q5">1</label>
 				<label class="radio-inline"><input type="radio" name="q5">2</label>
@@ -55,7 +62,7 @@
 				<label class="radio-inline"><input type="radio" name="q5">5</label>
 			</form>
 
-		<p>6: A drunken man walks in a way that is quite impossible for a sober man to imitate, and vice versa. An evil man has a way, no matter how clever — to the trained eye, his way will show itself.</p>
+		<h3>6: A drunken man walks in a way that is quite impossible for a sober man to imitate, and vice versa. An evil man has a way, no matter how clever — to the trained eye, his way will show itself.</h3>
 			<form>
 				<label class="radio-inline"><input type="radio" name="q6">1</label>
 				<label class="radio-inline"><input type="radio" name="q6">2</label>
@@ -64,7 +71,7 @@
 				<label class="radio-inline"><input type="radio" name="q6">5</label>
 			</form>
 
-		<p>7: There is as much space outside the human, proportionately, as inside. </p>
+		<h3>7: There is as much space outside the human, proportionately, as inside. </h3>
 			<form>
 				<label class="radio-inline"><input type="radio" name="q7">1</label>
 				<label class="radio-inline"><input type="radio" name="q7">2</label>
@@ -73,7 +80,7 @@
 				<label class="radio-inline"><input type="radio" name="q7">5</label>
 			</form>
 
-		<p>8:  It is almost fun not knowing.</p>
+		<h3>8:  It is almost fun not knowing.</h3>
 			<form>
 				<label class="radio-inline"><input type="radio" name="q8">1</label>
 				<label class="radio-inline"><input type="radio" name="q8">2</label>
@@ -82,7 +89,7 @@
 				<label class="radio-inline"><input type="radio" name="q8">5</label>
 			</form>
 
-		<p>9:  We live in a world where nothing is simple.</p>
+		<h3>9:  We live in a world where nothing is simple.</h3>
 			<form>
 				<label class="radio-inline"><input type="radio" name="q9">1</label>
 				<label class="radio-inline"><input type="radio" name="q9">2</label>
@@ -91,7 +98,7 @@
 				<label class="radio-inline"><input type="radio" name="q9">5</label>
 			</form>
 
-		<p>10: There are clues everywhere — all around us. But the puzzle maker is clever. The clues, although surrounding us, are somehow mistaken for something else. And the something else — the wrong interpretation of the clues — we call our world. Our world is a magical smoke screen.</p>
+		<h3>10: There are clues everywhere — all around us. But the puzzle maker is clever. The clues, although surrounding us, are somehow mistaken for something else. And the something else — the wrong interpretation of the clues — we call our world. Our world is a magical smoke screen.</h3>
 			<form>
 				<label class="radio-inline"><input type="radio" name="q10">1</label>
 				<label class="radio-inline"><input type="radio" name="q10">2</label>
@@ -100,7 +107,82 @@
 				<label class="radio-inline"><input type="radio" name="q10">5</label>
 			</form>
 		<br>
-		<button type="submit" class="btn btn-default">Submit</button> 
+		<button type="submit" class="btn btn-primary" id="submit">Submit</button> 
 	</div>
+
+	<footer class="footer text-center">
+		<div class="container">
+		    <p><a href="/api/friends">API Friends List</a>  |  <a href="https://github.com/scdoran/FriendFinder">Github Repo</a></p>
+	    </div>
+	</footer>
+
+	<div id="friendModal" class="modal fade" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">You Are <span id="characterName"></span></h4>
+	      </div>
+	      <div class="modal-body">
+	        <span id="characterInfo"></span>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
+	        <a href="home.html"><button type="button" id="playAgain" class="btn btn-primary">Play Again</button></a>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript">
+		// Question: What does this code do?
+	    $("#submit").on("click", function(event) {
+	      event.preventDefault();
+	      var newFriend = {
+	      	name: $("#name").val().trim(),
+	      	picture: $("#image").val().trim(),
+	        scores: [
+		        $("#q1").val(), 
+		        $("#q2").val(), 
+		        $("#q3").val(), 
+		        $("#q4").val(), 
+		        $("#q5").val(), 
+		        $("#q6").val(), 
+		        $("#q7").val(), 
+		        $("#q8").val(), 
+		        $("#q9").val(), 
+		        $("#q10").val()
+	        ]
+	      };
+
+	      // Grab the URL of the website
+	    	var currentURL = window.location.origin;
+
+	      $.post(currentURL + "/api/friends", newFriend)
+	      .done(function(data) {
+	        console.log(data);
+	        var characterMatch = $("<div>");
+	        var characterName = $(`<h3>${data.name}</h3>`);
+	        var characterImage = $("<img>").attr(src, data.image);
+
+	        $("#characterName").append($(`{data.name}`));
+	        characterMatch.append(characterName);
+	        characterMatch.append(characterImage);
+	        $("#characterInfo").append(characterMatch);
+
+	        console.log("Adding friend...");
+	        $('#friendModal').modal('toggle');
+
+	      });
+
+	      $("#playAgain").on("click", function(event){
+	      	$("#characterInfo").empty();
+	      });
+
+	      $("#close").on("click", function(event){
+	      	$("#characterInfo").empty();
+	      });
+
+    });
+	</script>
 </body>
 </html>

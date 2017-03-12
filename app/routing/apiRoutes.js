@@ -1,22 +1,16 @@
-var express = require("express");
-var path = require("path");
+var friendData = require("../data/friends");
 
-var app = express();
-var PORT = 3000;
+module.exports = function(app){
+	app.get("/api/friends", function(req, res){
 
-app.get("/api/friends", function(req, res){
-	
-	var friend = req.params.friends;
+  		return res.json(friendData);
+	});
 
-  	return res.json(friends);
+	app.post("/api/friends", function(req, res){
+		var newFriend = req.body;
+		friends.push(newFriend);
+		res.json(newFriend);
+		console.log(newFriend);
 
-});
-
-app.post("/api/friends", function(req, res){
-	
-	
-});
-
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
-});
+	});
+}
