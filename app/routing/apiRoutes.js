@@ -1,4 +1,5 @@
 var friendData = require("../data/friends");
+var newData = require("../data/newData");
 
 module.exports = function(app){
 	app.get("/api/friends", function(req, res){
@@ -15,11 +16,7 @@ module.exports = function(app){
 		
 		res.json(friendData);
 		var newFriend = req.body;
-		var newData = JSON.parse(newFriend);
-		var newScores = newData.scores;
-
-		console.log("New Scores " + newScores);
-
+		var newScores = newFriend.scores;
 
 		for (var i = 0; i < friendData.length; i++) {
 			scores.push(friendData[i].scores);
@@ -45,7 +42,9 @@ module.exports = function(app){
 		var index = results.indexOf(lowest);
 		
 		bestMatch = friendData[index];
+		// newData.push(bestMatch);
 		console.log(bestMatch.name);
+
 		// function bestMatch(){
 		// 	$("#characterName").append(bestMatch.name);
 		// 	var div = $("<div>");
