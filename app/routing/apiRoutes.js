@@ -14,7 +14,6 @@ module.exports = function(app){
 		var totalDifference = 0;
 		var bestMatch;
 		
-		res.json(friendData);
 		var newFriend = req.body;
 		var newScores = newFriend.scores;
 
@@ -43,7 +42,9 @@ module.exports = function(app){
 		
 		bestMatch = friendData[index];
 		// newData.push(bestMatch);
-		console.log(bestMatch.name);
+				res.json(bestMatch);
+
+		// console.log(bestMatch.name);
 
 		// function bestMatch(){
 		// 	$("#characterName").append(bestMatch.name);

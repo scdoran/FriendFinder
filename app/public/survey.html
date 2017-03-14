@@ -164,8 +164,8 @@
 	      .done(function(data) {
 	        console.log(data);
 	        var characterMatch = $("<div>");
-	        var characterName = $("<h3>").append(data.name);
-	        var characterImage = $("<img>").attr("src", data.image);
+	        var characterName = $("<h3 class='text-center'>").append("You are " + data.name);
+	        var characterImage = $("<img id='pic'>").attr("src", data.photo);
 
 	        $("#characterName").append(data.name);
 	        characterMatch.append(characterName);
