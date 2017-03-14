@@ -1,0 +1,27 @@
+* {
+     margin: 0;
+     background: url("../images/fog-trees-background.jpg") center center fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+}
+
+.jumbotron, h1, h2, h3, p {
+	color: #ff2323;
+}
+
+label .radio-inline{
+	color: white;
+}
+
+.well {
+	color: #ff2323;
+	opacity: 60%;
+	border-style: none;
+}
+
+input {
+	background-color: white;
+}

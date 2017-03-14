@@ -7,30 +7,66 @@ module.exports = function(app){
 	});
 
 	app.post("/api/friends", function(req, res){
-		res.json(friendData);
+		
 		var scores = [];
-
+		var results = [];
+		var totalDifference = 0;
+		var bestMatch;
+		
+		res.json(friendData);
 		var newFriend = req.body;
 		var newData = JSON.parse(newFriend);
 		var newScores = newData.scores;
+
+		console.log(newScores);
+
 
 		for (var i = 0; i < friendData.length; i++) {
 			scores.push(friendData[i].scores);
 		}
 		
-		var results = [];
-		var totals = [];
+		scores.forEach( function(element, index) {
+			
+			for(var i = 0; i < newScores.length; i++) {
+	  			
+	  			var difference = Math.abs(newScores[i] - element[i]);
+	  			totalDifference += difference;
+	  		}
+	  		
+	  		results.push(totalDifference);
+	  		totalDifference = 0;
+
+		});
+
+		Array.min = function( array ) {
+			return Math.min.apply(Math, array);
+		};
+		var lowest = Array.min(results);
+		var index = results.indexOf(lowest);
 		
-		for(var i = 0; i < newScores.length; i++) {
-  			results.push(Math.abs(newScores[i] - scores[0][i]));
-		}
-			console.log(results);
+		bestMatch = friendData[index];
+		console.log(bestMatch.name);
+		// function bestMatch(){
+		// 	$("#characterName").append(bestMatch.name);
+		// 	var div = $("<div>");
+		// 	var h2 = $("<h2>You are " + bestMatch.name + ".");
+		// 	div.append(h2);
+		// 	var img = $("<img>").attr(src, bestMatch.image);
+		// 	div.append(image);
+		// 	$("characterInfo").append(div);
+		// }
 
-		var totalDifference = results.reduce(function(acc, val) {
-		  return acc + val;
-		}, 0);
+		// bestMatch();
 
-		console.log(totalDifference);
+		// function clear(){
+		// 	totalDifference = 0;
+		// 	bestMatch;
+		// 	results = [];
+		// }
+
+		// $("#playAgain").on("click", function(){
+		// 	clear();
+		// });
 
 	});
 }
