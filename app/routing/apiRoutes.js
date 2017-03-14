@@ -18,7 +18,7 @@ module.exports = function(app){
 		var newData = JSON.parse(newFriend);
 		var newScores = newData.scores;
 
-		console.log(newScores);
+		console.log("New Scores " + newScores);
 
 
 		for (var i = 0; i < friendData.length; i++) {
