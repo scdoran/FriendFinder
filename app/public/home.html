@@ -11,7 +11,7 @@
 <body>
 	<div class="jumbotron text-center">
 		<h1>Which Twin Peaks Character Are You?</h1>
-		<a href="survey.html"><button class="btn btn-primary"> Click Here to Find Out!</button></a>
+		<a id="surveyPage" href="survey.html"><button class="btn btn-primary"> Click Here to Find Out!</button></a>
 	</div>
 	
 	<footer class="footer text-center">
@@ -19,6 +19,36 @@
 		    <p><a href="/api/friends">API Friends List</a>  |  <a href="https://github.com/scdoran/FriendFinder">Github Repo</a></p>
 	    </div>
 	</footer>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+			$('body').css('display', 'none');
+			
+			var audio = new Audio('../sound/Audreys_Dance.mp3');
+			audio.play();
+
+			$('body').fadeIn(3000);
+
+				$('a').click(function() {
+
+					event.preventDefault();
+
+					newLocation = this.href;
+					
+					$('body').fadeOut(3000, newpage);
+
+		});
+
+		function newpage() {
+			window.location = newLocation;
+		
+		}
+
+	});
+
+	</script>
 	
 </body>
 </html>
