@@ -118,7 +118,7 @@
 				</select>
 		</div>
 		<br>
-		<button type="submit" class="btn btn-primary" id="submit" data-toggle="modal" data-target="#myModal">Submit</button>
+		<button type="submit" class="btn" id="submit" data-toggle="modal" data-target="#myModal">Submit</button>
 	</div>
 
 	<footer class="footer text-center">
@@ -127,6 +127,7 @@
 	    </div>
 	</footer>
 
+<!-- My Modal Content -->
 	<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
@@ -137,7 +138,7 @@
 	      <div class="modal-body text-center">
 	        <span id="characterInfo"></span>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn" id="close" data-dismiss="modal">Close</button>
 	        <a href="home.html"><button type="button" id="playAgain" class="btn btn-primary">Play Again</button></a>
 	      </div>
 	    </div><!-- /.modal-content -->
@@ -146,14 +147,14 @@
 	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-
+// When the page loads...
 		$(document).ready(function() {
-
+			// The body text will not be present, but will fade in after 3 seconds.
 			$('body').css('display', 'none');
 
-			$('body').fadeIn(1000);
+			$('body').fadeIn(3000);
 	});
-
+		// When the user clicks on the submit button new data will be pushed to the friends/api in routes.
 	    $("#submit").on("click", function(event) {
 	      event.preventDefault();
 	      
@@ -177,27 +178,29 @@
 	      // Grab the URL of the website
 	    	var currentURL = window.location.origin;
 
+	    	// The api will push the results of the user's data after being compared through the existing friend/ character data.
 	      $.post(currentURL + "/api/friends", newFriend)
 	      .done(function(data) {
-	        console.log(data);
+			// New div created with the character content.
 	        var characterMatch = $("<div>");
 	        var characterImage = $("<img id='pic'>").attr("src", data.photo);
-	        var characterInfo = $("<h4 class='text-center'>").append(data.info);
+	        var characterInfo = $("<h4 class='text-center well'>").append(data.info);
 
 	        $("#characterName").append(data.name);
 	        characterMatch.append(characterImage);
 	        characterMatch.append(characterInfo);
 	        $("#characterInfo").append(characterMatch);
-
+	        // All of the data will be appended to the modal, thus prompting the modal at the end.
 	        $("#myModal").modal();
 
 	      });
-
+	      // If the user clicks on the play again button the character name and info will be emptied.
 	      $("#playAgain").on("click", function(event){
 	      	$("#characterInfo").empty();
 			$("#characterName").empty();
 	      });
 
+	      // If the user clicks on close the character info and chracter name will also be emptied.
 	      $("#close").on("click", function(event){
 	      	$("#characterInfo").empty();
 			$("#characterName").empty();

@@ -21,7 +21,8 @@
 	</footer>
 
 	<script type="text/javascript">
-		
+		// When the page loads the body will not be present, but will fade in after 3 seconds. 
+		// Audio will also begin playing and will continue to play until the user click on the button.
 		$(document).ready(function() {
 
 			$('body').css('display', 'none');
@@ -31,12 +32,14 @@
 
 			$('body').fadeIn(3000);
 
+			// If the user clicks on the button to continue the page will fade out.
+
 				$('a').click(function() {
 
 					event.preventDefault();
 
 					newLocation = this.href;
-					
+
 					$('body').fadeOut(3000, newpage);
 
 		});
