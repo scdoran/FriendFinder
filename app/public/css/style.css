@@ -1,4 +1,4 @@
-* {
+body {
      margin: 0;
      background: url("../images/fog-trees-background.jpg") center center fixed;
      background-repeat: no-repeat;
@@ -8,8 +8,35 @@
      -o-background-size: cover;
 }
 
-.jumbotron, h1, h2, h3, p {
+.modal-content{
+     margin: 0;
+     background: url("../images/64-Red-Room-Empty.jpg") center center fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;  
+}
+
+.modal-header, .modal-footer {
+     border-style: none;
+}
+
+.jumbotron, h1, h2 {
+     font-family: 'Roboto Condensed',sans-serif;
+     background-color: rgba(245, 245, 245, 0);
+     letter-spacing: 2px;
+     font-weight: bold;
+     transform: uppercase;
+     text-shadow: 1px 1px 0 #2be70e, -1px -1px 0 #2be70e, 1px -1px 0 #2be70e, -1px 1px 0 #2be70e, 0px 1px 0 #2be70e, 1px 0px 0 #2be70e, 0px -1px 0 #2be70e, -1px 0px 0 #2be70e, 3px 3px 2px #000000;    text-shadow: 1px 1px 0 #2be70e, -1px -1px 0 #2be70e, 1px -1px 0 #2be70e, -1px 1px 0 #2be70e, 0px 1px 0 #2be70e, 1px 0px 0 #2be70e, 0px -1px 0 #2be70e, -1px 0px 0 #2be70e, 3px 3px 2px #000000;
+} 
+
+h4 {
 	color: #ff2323;
+}
+
+.input-group{
+     margin-bottom: 10px;
 }
 
 label .radio-inline{
@@ -17,9 +44,8 @@ label .radio-inline{
 }
 
 .well {
-	color: #ff2323;
-	opacity: 60%;
-	border-style: none;
+     border-style: none;
+     background-color: rgba(245, 245, 245, 0.2);
 }
 
 #pic{
@@ -29,8 +55,4 @@ label .radio-inline{
      margin: auto;
      margin-bottom: 30px;
      box-shadow: 10px 10px 5px grey;
-}
-
-input {
-	background-color: white;
 }

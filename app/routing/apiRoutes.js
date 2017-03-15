@@ -1,5 +1,4 @@
 var friendData = require("../data/friends");
-var newData = require("../data/newData");
 
 module.exports = function(app){
 	app.get("/api/friends", function(req, res){
@@ -41,32 +40,7 @@ module.exports = function(app){
 		var index = results.indexOf(lowest);
 		
 		bestMatch = friendData[index];
-		// newData.push(bestMatch);
-				res.json(bestMatch);
-
-		// console.log(bestMatch.name);
-
-		// function bestMatch(){
-		// 	$("#characterName").append(bestMatch.name);
-		// 	var div = $("<div>");
-		// 	var h2 = $("<h2>You are " + bestMatch.name + ".");
-		// 	div.append(h2);
-		// 	var img = $("<img>").attr(src, bestMatch.image);
-		// 	div.append(image);
-		// 	$("characterInfo").append(div);
-		// }
-
-		// bestMatch();
-
-		// function clear(){
-		// 	totalDifference = 0;
-		// 	bestMatch;
-		// 	results = [];
-		// }
-
-		// $("#playAgain").on("click", function(){
-		// 	clear();
-		// });
+		res.json(bestMatch);
 
 	});
 }

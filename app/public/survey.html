@@ -4,20 +4,30 @@
 	<title>Twin Peaks Character Quiz</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Cambay:400i|Contrail+One" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 	<div class="container text-center">
 		<h1>Which Twin Peaks Character Are You?</h1>
-
-		<h3>What is your name?</h3><input type="text" id="name">
-		<h3>Please paste a link for your picture.</h3>
-		<input type="text" id="image">
+		
+		<br>
 
 		<h2>Answer the following questions based on how much you agree with the statement (1 is strongly disagree and 5 is strongly agree).</h2>
 		<hr>
+
+		<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon1">Name</span>
+		  <input type="text" class="form-control" id="name" placeholder="Please type your name here" aria-describedby="basic-addon1">
+		</div>
+				
+		<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon1">Picture</span>
+		  <input type="text" class="form-control" id="image" placeholder="Please paste a link of your picture here" aria-describedby="basic-addon1">
+		</div>
+		
 		<div class="well">
-			<h3>1: Dreams are an important way to understand the world around you.</h3>
+			<h2>1: Dreams are an important way to understand the world around you.</h2>
 				<form>
 					<label class="radio-inline q1"><input type="radio" name="q1" value=1>1</label>
 					<label class="radio-inline q1"><input type="radio" name="q1" value=2>2</label>
@@ -26,7 +36,7 @@
 					<label class="radio-inline q1"><input type="radio" name="q1" value=5>5</label>
 				</form>
 
-			<h3>2: Behind all things are reasons.</h3>
+			<h2>2: Behind all things are reasons.</h2>
 				<form>
 					<label class="radio-inline q2"><input type="radio" name="q2" value=1>1</label>
 					<label class="radio-inline q2"><input type="radio" name="q2" value=2>2</label>
@@ -35,7 +45,7 @@
 					<label class="radio-inline q2"><input type="radio" name="q2" value=5>5</label>
 				</form>
 
-			<h3>3: All that we see in this world is based on someone's ideas.</h3>
+			<h2>3: All that we see in this world is based on someone's ideas.</h2>
 				<form>
 					<label class="radio-inline q3"><input type="radio" name="q3" value=1>1</label>
 					<label class="radio-inline q3"><input type="radio" name="q3" value=2>2</label>
@@ -44,7 +54,7 @@
 					<label class="radio-inline q3"><input type="radio" name="q3" value=5>5</label>
 				</form>
 
-			<h3>4: We are ignorant of many beautiful things — things like the truth.</h3>
+			<h2>4: We are ignorant of many beautiful things — things like the truth.</h2>
 				<form>
 					<label class="radio-inline q4"><input type="radio" name="q4" value=1>1</label>
 					<label class="radio-inline q4"><input type="radio" name="q4" value=2>2</label>
@@ -53,7 +63,7 @@
 					<label class="radio-inline q4"><input type="radio" name="q4" value=5>5</label>
 				</form>	
 
-			<h3>5: Eyes are the mirror of the soul.</h3>
+			<h2>5: Eyes are the mirror of the soul.</h2>
 				<form>
 					<label class="radio-inline q5"><input type="radio" name="q5" value=1>1</label>
 					<label class="radio-inline q5"><input type="radio" name="q5" value=2>2</label>
@@ -62,7 +72,7 @@
 					<label class="radio-inline q5"><input type="radio" name="q5" value=5>5</label>
 				</form>
 
-			<h3>6: A drunken man walks in a way that is quite impossible for a sober man to imitate, and vice versa. An evil man has a way, no matter how clever — to the trained eye, his way will show itself.</h3>
+			<h2>6: A drunken man walks in a way that is quite impossible for a sober man to imitate, and vice versa. An evil man has a way, no matter how clever — to the trained eye, his way will show itself.</h2>
 				<form>
 					<label class="radio-inline q6"><input type="radio" name="q6" value=1>1</label>
 					<label class="radio-inline q6"><input type="radio" name="q6" value=2>2</label>
@@ -71,7 +81,7 @@
 					<label class="radio-inline q6"><input type="radio" name="q6" value=5>5</label>
 				</form>
 
-			<h3>7: There is as much space outside the human, proportionately, as inside. </h3>
+			<h2>7: There is as much space outside the human, proportionately, as inside. </h2>
 				<form>
 					<label class="radio-inline q7"><input type="radio" name="q7" value=1>1</label>
 					<label class="radio-inline q7"><input type="radio" name="q7" value=2>2</label>
@@ -80,7 +90,7 @@
 					<label class="radio-inline q7"><input type="radio" name="q7" value=5>5</label>
 				</form>
 
-			<h3>8:  It is almost fun not knowing.</h3>
+			<h2>8:  It is almost fun not knowing.</h2>
 				<form>
 					<label class="radio-inline q8"><input type="radio" name="q8" value=1>1</label>
 					<label class="radio-inline q8"><input type="radio" name="q8" value=2>2</label>
@@ -89,7 +99,7 @@
 					<label class="radio-inline q8"><input type="radio" name="q8" value=5>5</label>
 				</form>
 
-			<h3>9:  We live in a world where nothing is simple.</h3>
+			<h2>9:  We live in a world where nothing is simple.</h2>
 				<form>
 					<label class="radio-inline q9"><input type="radio" name="q9" value=1>1</label>
 					<label class="radio-inline q9"><input type="radio" name="q9" value=2>2</label>
@@ -98,7 +108,7 @@
 					<label class="radio-inline q9"><input type="radio" name="q9" value=5>5</label>
 				</form>
 
-			<h3>10: There are clues everywhere — all around us. But the puzzle maker is clever. The clues, although surrounding us, are somehow mistaken for something else. And the something else — the wrong interpretation of the clues — we call our world. Our world is a magical smoke screen.</h3>
+			<h2>10: There are clues everywhere — all around us. But the puzzle maker is clever. The clues, although surrounding us, are somehow mistaken for something else.</h2>
 				<form>
 					<label class="radio-inline q10"><input type="radio" name="q10" value=1>1</label>
 					<label class="radio-inline q10"><input type="radio" name="q10" value=2>2</label>
@@ -106,7 +116,7 @@
 					<label class="radio-inline q10"><input type="radio" name="q10" value=4>4</label>
 					<label class="radio-inline q10"><input type="radio" name="q10" value=5>5</label>
 				</form>
-			</div>
+		</div>
 		<br>
 		<button type="submit" class="btn btn-primary" id="submit" data-toggle="modal" data-target="#myModal">Submit</button>
 	</div>
@@ -122,9 +132,9 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title">You Are <span id="characterName"></span></h4>
+	        <h2 class="modal-title text-center">You Are <span id="characterName"></span></h2>
 	      </div>
-	      <div class="modal-body">
+	      <div class="modal-body text-center">
 	        <span id="characterInfo"></span>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
@@ -164,12 +174,12 @@
 	      .done(function(data) {
 	        console.log(data);
 	        var characterMatch = $("<div>");
-	        var characterName = $("<h3 class='text-center'>").append("You are " + data.name);
 	        var characterImage = $("<img id='pic'>").attr("src", data.photo);
+	        var characterInfo = $("<h4 class='text-center'>").append(data.info);
 
 	        $("#characterName").append(data.name);
-	        characterMatch.append(characterName);
 	        characterMatch.append(characterImage);
+	        characterMatch.append(characterInfo);
 	        $("#characterInfo").append(characterMatch);
 
 	        $("#myModal").modal();
