@@ -37,15 +37,11 @@ body {
 
 h4 {
 	color: white;
-     text-shadow: 1px 1px 0 #2be70e, -1px -1px 0 #2be70e, 1px -1px 0 #2be70e, -1px 1px 0 #2be70e, 0px 1px 0 #2be70e, 1px 0px 0 #2be70e, 0px -1px 0 #2be70e, -1px 0px 0 #2be70e, 3px 3px 2px #000000;    text-shadow: 1px 1px 0 #2be70e, -1px -1px 0 #2be70e, 1px -1px 0 #2be70e, -1px 1px 0 #2be70e, 0px 1px 0 #2be70e, 1px 0px 0 #2be70e, 0px -1px 0 #2be70e, -1px 0px 0 #2be70e, 3px 3px 2px #000000;
-}
+/*     text-shadow: 1px 1px 0 #2be70e, -1px -1px 0 #2be70e, 1px -1px 0 #2be70e, -1px 1px 0 #2be70e, 0px 1px 0 #2be70e, 1px 0px 0 #2be70e, 0px -1px 0 #2be70e, -1px 0px 0 #2be70e, 3px 3px 2px #000000;    text-shadow: 1px 1px 0 #2be70e, -1px -1px 0 #2be70e, 1px -1px 0 #2be70e, -1px 1px 0 #2be70e, 0px 1px 0 #2be70e, 1px 0px 0 #2be70e, 0px -1px 0 #2be70e, -1px 0px 0 #2be70e, 3px 3px 2px #000000;
+*/}
 
 .input-group{
      margin-bottom: 10px;
-}
-
-label .radio-inline{
-	color: white;
 }
 
 .well {
